@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สุขสันต์วันเกิดเปา 🎂</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+      font-family: 'Prompt', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #ec5285;
+      font-size: 2.2em;
+      margin-top: 10px;
+    }
+
+    #photo {
+      width: 50vw;
+      max-width: 180px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffb6c1;
+      box-shadow: 0 0 12px rgba(218, 28, 123, 0.4);
+      margin: 20px 0;
+    }
+
+    #message {
+      margin: 10px auto 20px;
+      max-width: 90%;
+      padding: 18px;
+      background: #fff0f6;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.2);
+      font-size: 1em;
+      color: #c2185b;
+      line-height: 1.7;
+      white-space: pre-wrap;
+    }
+
+    #giftBtn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    #giftBtn:hover {
+      background-color: #f64f9c;
+    }
+
+    #loveNote {
+      display: none;
+      margin-top: 25px;
+      padding: 18px;
+      background: #ffe0eb;
+      border-radius: 15px;
+      color: #d81b60;
+      font-size: 1.2em;
+      font-weight: 600;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 2s ease-in;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* หัวใจร่วง */
+    .heart {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: rgb(233, 135, 151);
+      transform: rotate(45deg);
+      animation: fall 5s linear infinite;
+      opacity: 0.8;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before { top: -8px; left: 0; }
+    .heart::after { left: -8px; top: 0; }
+
+    @keyframes fall {
+      0% { top: -10%; left: calc(100% * var(--x)); opacity: 1; }
+      100% { top: 110%; left: calc(100% * var(--x) + 30px); opacity: 0; }
+    }
+
+    /* พลุ */
+    .firework {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #ff69b4;
+      border-radius: 50%;
+      animation: explode 1.5s ease-out infinite;
+    }
+
+    @keyframes explode {
+      0% { transform: translate(0, 0); opacity: 1; }
+      100% { transform: translate(var(--x), var(--y)); opacity: 0; }
+    }
+
+    /* ปรับขนาดบนหน้าจอใหญ่ */
+    @media (min-width: 768px) {
+      h1 { font-size: 3em; }
+      #message, #loveNote { font-size: 1.2em; max-width: 600px; }
+      #giftBtn { font-size: 1.2em; padding: 15px 35px; }
+      #photo { width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>สุขสันต์วันเกิด เปา 🎂</h1>
+
+  <img id="photo" src="c:\Users\Me Tang\Downloads\file_0000000056d06230bc63f5d5908f8f34_conversation_id=67f71106-7a68-8007-9a5f-6d7e7a09fd59&message_id=cc7d70d1-0e23-4fbb-9aee-3be886ab5945.jpg" alt="รูปน่ารักของเปา" />
+
+  <div id="message">
+สุขสันต์วันเกิดนะเปา ขอให้เปามีความสุขมากๆ  
+สุขภาพแข็งแรง เป็นรอยยิ้มของไนท์ไปนานๆนะ 🤗🐇💕
+
+หวังว่าความฝันและความปรารถนาของที่รักจะเป็นจริง  
+ไปทำงานที่ไหน สมัครงานที่ไหนเขาก็รับนะ  
+ไม่เจอคนเอาเปรียบ มีแต่คนรักทุกคนนะ 🐰🌷🌷💞🐇💕
+  </div>
+
+  <button id="giftBtn">🎁 เปิดของขวัญ</button>
+
+  <div id="loveNote">
+    💖 เปา... ไนท์รักเปามากนะ  
+    ไม่ว่าอะไรจะเกิดขึ้น เปาคือคนสำคัญที่สุดในใจไนท์เสมอ 🐰💕  
+    ขอบคุณที่อยู่ข้างๆกันนะครับ  
+    ขอให้เราได้เดินไปด้วยกันแบบนี้อีกนานแสนนานนะ 🤝🌈
+    กระต่ายคู่กับพระจันทร์เสมอนะครับ
+    
+
+  NIGHTPAOตลอดไปนะ
+  </div>
+
+  <script>
+    // หัวใจตก
+    for (let i = 0; i < 40; i++) {
+      let heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.setProperty('--x', Math.random());
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+      heart.style.top = "-10px";
+      document.body.appendChild(heart);
+    }
+
+    // พลุ
+    setInterval(() => {
+      for (let i = 0; i < 15; i++) {
+        let spark = document.createElement("div");
+        spark.className = "firework";
+        spark.style.left = window.innerWidth / 2 + "px";
+        spark.style.top = window.innerHeight / 4 + "px";
+        spark.style.setProperty('--x', (Math.random() - 0.5) * 200 + "px");
+        spark.style.setProperty('--y', (Math.random() - 0.5) * 200 + "px");
+        spark.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        document.body.appendChild(spark);
+        setTimeout(() => spark.remove(), 1500);
+      }
+    }, 2500);
+
+    // เปิดของขวัญ → แสดงข้อความรัก
+    document.getElementById("giftBtn").onclick = () => {
+      document.getElementById("giftBtn").style.display = "none";
+      document.getElementById("loveNote").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
